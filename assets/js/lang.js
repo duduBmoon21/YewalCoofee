@@ -43,16 +43,14 @@ const jsonAm = {
     "steps__description01":"The beans are dried using a wet or dry technique, depending on the taste we want  to obtain.",
     "steps__description02":"The coffee is roasted and acquires its flavor by processing the grain in ovens. ",
     "section__title02":"Coffee is the best drink in the  morning, it keeps you focused.",
-    "footer__logo":"YewaleCoffee",
+    "footer__logo":"Yewale Coffee",
     "footer__title":" Come and Enjoy with Us",
-    "button footer__button":"Email Us"
+    "button footer__button":"Email Us",
     "footer__description":"We care about your data. Read our ",
     "footer__privacy":"Privacy Policy",
-
-
   };
   
-  document.querySelector('#language').addEventListener("change", function() {
+  document.querySelector('#language').addEventListener("change", function () {
     const selectedLanguage = this.value;
     const translations = selectedLanguage === "en" ? jsonEN : jsonAm;
   
@@ -64,3 +62,4 @@ const jsonAm = {
       }
     }
   });
+  
