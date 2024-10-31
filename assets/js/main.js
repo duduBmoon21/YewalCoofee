@@ -66,55 +66,9 @@ sr2.reveal(`.products__card`, {interval: 100})
 sr.reveal(`.about__img, .testimonial__img`, {origin: 'right'})
 sr.reveal(`.about__data, .testimonial__data`, {origin: 'left'})
 
-// const jsonAm = {
-//     "home__title": "ጊዜው ለጥሩ ቡና",
-//     "home__subtitle": "ልዩ ጥራት",
-//     "home__description": "እያንዳንዱ የተመረጠ የቡና ፍሬ ምርጡን ቡና ወደ ጠረጴዛዎ የሚያመጡት ለፔሩ ቡና አብቃዮች ያለንን ቁርጠኝነት ያንፀባርቃል።",
-//     "products__button": "ወደ ታች ሸብልል",
-//     "products__description": "ከገበሬዎች ጋር ጥልቅ ትብብር ለመፍጠር እንጥራለን። እይታን ለመፍጠር ከመላው አለም አንድ ላይ እና ጤናማ የስራ ግንኙነት ይመሰርታሉ በመተማመን እና በመከባበር ላይ የተገነባ።"
-//   };
-  
-//   const jsonEN = {
-//     "home__title": "It's time for a good coffee",
-//     "home__subtitle": "EXCEPTIONAL QUALITY",
-//     "home__description": "Each select coffee bean reflects our commitment to Peruvian coffee growers, who bring the best select coffee to your table.",
-//     "products__button": "Scroll Down",
-//     "products__description": "We strive to form deep partnerships with farmers from all over the world to create perspective together and form healthy working relationships built on trust and respect."
-//   };
-  
-//   document.querySelector('#language').addEventListener("change", function() {
-//     const selectedLanguage = this.value;
-//     const translations = selectedLanguage === "en" ? jsonEN : jsonAm;
-  
-//     // Update each element with the corresponding translation
-//     for (let key in translations) {
-//       const element = document.querySelector('.' + key);
-//       if (element) {
-//         element.textContent = translations[key];
-//       }
-//     }
-//   });
 
-document.querySelector('#language').addEventListener("change", function() {
-    const selectedLanguage = this.value;
-    const filePath = `assets/lang/${selectedLanguage}.json`;  
-  
-    fetch(filePath)
-      .then(response => {
-        if (!response.ok) throw new Error('Network response was not ok');
-        return response.json();
-      })
-      .then(translations => {
-        for (let key in translations) {
-          const element = document.querySelector('.' + key);
-          if (element) {
-            element.textContent = translations[key];
-          }
-        }
-      })
-      .catch(error => console.error('Error loading language file:', error));
-  });
-  
+
+
   
   
 

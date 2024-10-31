@@ -110,6 +110,27 @@ img {
   margin-bottom: 1.5rem;
 }
 
+
+.section__title01 {
+  color: var(--title-color);
+  font-size: var(--big-font-size);
+  font-family: var(--second-font);
+  font-weight: var(--font-regular);
+  line-height: 120%;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.section__title02 {
+  color: var(--title-color);
+  font-size: var(--big-font-size);
+  font-family: var(--second-font);
+  font-weight: var(--font-regular);
+  line-height: 120%;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
 .main {
   overflow: hidden; /* For animation ScrollReveal */
 }
@@ -383,6 +404,24 @@ img {
   line-height: 120%;
 }
 
+.products__name01,
+.products__price01 {
+  font-size: var(--h2-font-size);
+  font-family: var(--second-font);
+  font-weight: var(--font-regular);
+  line-height: 120%;
+}
+
+.products__name02,
+.products__price02 {
+  font-size: var(--h2-font-size);
+  font-family: var(--second-font);
+  font-weight: var(--font-regular);
+  line-height: 120%;
+}
+
+
+
 /*=============== ABOUT ===============*/
 .about {
   background-color: var(--first-color);
@@ -424,6 +463,17 @@ img {
 
 .steps .section__title,
 .steps__description {
+  color: var(--white-color);
+}
+
+
+.section__title02,
+.steps__description02 {
+  color: var(--white-color);
+}
+
+.steps01 .section__title01,
+.steps__description01 {
   color: var(--white-color);
 }
 
@@ -486,7 +536,13 @@ img {
 .steps__card-move, .steps__description {
   text-align: right;
 }
+.steps__description01 {
+  text-align: right;
+}
 
+.steps__description02 {
+  text-align: right;
+}
 .steps__border {
   position: absolute;
   left: 3rem;
@@ -845,6 +901,14 @@ img {
     text-align: initial;
   }
 
+  .about__data,
+  .about__data .section__title01 {
+    text-align: initial;
+  }
+
+  .section__title02 {
+    text-align: initial;
+  }
   .steps__content {
     grid-template-columns: repeat(3, max-content);
     column-gap: 6.5rem;
@@ -866,6 +930,19 @@ img {
     text-align: initial;
     margin-bottom: 3rem;
   }
+
+  .steps__card-move .steps__description01 {
+    order: -1;
+    text-align: initial;
+    margin-bottom: 3rem;
+  }
+  .steps__card-move .steps__description02 {
+    order: -1;
+    text-align: initial;
+    margin-bottom: 3rem;
+  }
+
+
   .steps__circle {
     width: 260px;
     height: 260px;
@@ -904,6 +981,19 @@ img {
   }
   .testimonial__data .section__title {
     margin-bottom: 3rem;
+  }
+  .testimonial__data01 .section__title01 {
+    text-align: initial;
+  }
+  .testimonial__data02 .section__title01 {
+    margin-bottom: 3rem;
+  }
+
+  .section__title02 {
+    margin-bottom: 3rem;
+  }
+  .section__title02 {
+    text-align: initial;
   }
 
   .footer__container {
